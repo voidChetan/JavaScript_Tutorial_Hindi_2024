@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function makeCircle() {
+            document.getElementById('myDiv').style.width = "200px";
+            document.getElementById('myDiv').style.height = "200px";
+            document.getElementById('myDiv').style.borderRadius = "50%";
+        }
+
+        function makeSquare() {
+            document.getElementById('myDiv').style.width = "100px";
+            document.getElementById('myDiv').style.height = "100px"; 
+            document.getElementById('myDiv').style.borderRadius = "0";
+        }
+        var isActive = true;
+        function addColor() {
+            // if(isActive == true) {
+            //     document.getElementById("myLabel").style.color = "red";
+            //     isActive = false;
+            // } else {
+            //     document.getElementById("myLabel").style.color = "black";
+            //     isActive = true;
+            // }
+            document.getElementById("myLabel").style.color = isActive? 'red':'black' ;
+            isActive = !isActive;
+        }
+        // function removeColor() {
+        //     document.getElementById("myLabel").style.color = "black";
+        // }
+    </script>
+    <div id="myDiv" style="background-color: red;">
+        
+    </div>
+    <label  id="myLabel" onmouseleave="addColor()" onmouseover="addColor()">Enter Name</label>
+
+    <button onclick="makeCircle()">Make Circle</button>
+    <button onclick="makeSquare()">Make Square</button>
+    <script>
+        function addGreen() {
+            document.getElementById("myDiv2").classList.add('green')
+            document.getElementById("myDiv2").classList.remove('red')
+        }
+        function addRed() {
+            document.getElementById("myDiv2").classList.add('red')
+            document.getElementById("myDiv2").classList.remove('green')
+        }
+    </script>
+    <div class="bb cc vv" id="myDiv2" style="height: 50px;width: 50px;">
+
+    </div>
+    <button onclick="addGreen()">Add Green Class</button>
+    <button onclick="addRed()">Add Red Class</button>
+    <style>
+        .green {
+            background-color: green;
+            color: white;
+        }
+        .red {
+            background-color: red;
+            color: blue;
+        }
+    </style>
+</body>
+</html>

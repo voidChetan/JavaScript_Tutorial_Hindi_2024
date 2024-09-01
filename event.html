@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function showWelcomeText() {
+            alert("Welcome TO JavaScript");
+        }
+        function onCityChange (event) {
+            debugger;
+            alert("City Chnaged")
+        }
+        function onmouseEnter() {
+            console.log('Mouse Enetered DIV!!!')
+        }
+        function onMouseLeave() {
+            console.log('Mouse LEFTTT')
+        }
+    </script>
+ 
+    <p onclick="showWelcomeText()">Click Me</p>
+    <select onchange="onCityChange($Event)">
+        <option value="">Pune</option>
+        <option value="">Mumbai</option>
+        <option value="">Panji</option>
+    </select>
+    <input type="text"   oninput="onCityChange()"/>
+    <button onclick="showWelcomeText()">Show Welcome text</button>
+    <div onmouseenter="onmouseEnter()" onmouseleave="onMouseLeave()"  style="background-color: red;height: 200px;width: 200px;">
+
+    </div>
+</body>
+</html>

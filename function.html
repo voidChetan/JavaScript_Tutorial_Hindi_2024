@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        function showWelcomeMessage() {
+            alert("Welcome")
+        }
+        //execute //invoke /call
+        showWelcomeMessage();
+
+        function addTwoNo() {
+            const num1 = 22;
+            const num2 = 33;
+
+            const result = num1 + num2;
+            console.log(result)
+        }
+        addTwoNo();
+      
+
+        function getSum(num1 , num2 = 0) {
+            debugger;
+            const result =  num1 +  num2;
+            console.log("Additon is "+ result)
+        }
+        debugger;
+        getSum(33,55)
+        getSum(66);
+        getSum();
+
+        function getSumOfTwoNo(num1, num2) {
+            const result =  num1 + num2;
+            return result;
+        }
+        var result1 =  getSumOfTwoNo(44,55)
+        console.log(getSumOfTwoNo(11,22));
+
+        function getPieValue() {
+            return 3.14;
+        }
+        var pisVal =  getPieValue()
+
+    </script>
+
+
+</body>
+
+</html>

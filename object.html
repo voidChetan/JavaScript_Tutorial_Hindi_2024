@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var name = "Chetan";
+        // var city = "Pune";
+        // var state = "MAH";
+        // var rollNo = 122;
+        //key value, properties, field value
+
+        var studentDetails = {
+            name: "Chetan",
+            city: 'Pune',
+            state: 'MAH',
+            rollNo: 122
+        };
+        debugger;
+        console.log(studentDetails.rollNo)
+        console.log(studentDetails)
+        studentDetails.rollNo = 124;
+        console.log(studentDetails.rollNo)
+        studentDetails.country = "India";
+        console.log(studentDetails)
+        console.log(studentDetails['state'])
+
+        var employeeData = {
+            empId: 323,
+            empName: 'RRR RRR RRR',
+            empDesignation:'Sr Soft Eng',
+            projectName: 'ERPR BANK',
+            familyDetails: {
+                motherName: '1111',
+                fatherName:'2323'
+            }
+        }
+        console.log(employeeData.projectName)
+        console.log(employeeData.state)
+        console.log(employeeData.familyDetails.fatherName)
+
+    </script>
+    
+</body>
+</html>

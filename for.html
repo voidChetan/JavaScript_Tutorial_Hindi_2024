@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //initialize
+        //condition
+        //increment or decremt 
+        // for(var index = 0; index <5; index++) {
+        //     console.log(index)
+        // }
+
+        // for(var index= 5; index>= 0; index--) {
+        //     console.log(index)
+        // }
+        function printTable() {
+            document.getElementById("myUl").innerHTML = "";
+            const num  = document.getElementById("textNum").value;
+            for(var index= 1; index <11;index++) {
+                //console.log(num + " * "+ index + " = "+num* index)
+                const myLi =  document.createElement('li');
+                myLi.innerText = num + " * "+ index + " = "+num* index;
+                document.getElementById("myUl").appendChild(myLi)
+            } 
+        }
+    </script>
+    <input type="text" placeholder="Enter Num" id="textNum" />
+    <button onclick="printTable()">Print Table</button>
+    <br>
+    <ul id="myUl">
+
+    </ul>
+</body>
+</html>

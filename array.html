@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     
+
+        var  cityArray =  [ "Pune", "Mumbai", "Solapur" ];
+
+        var rollNoArray = [111, 112, 113, 114, 115];
+
+        var studentArray = [
+            {name:'AAA',city :'Pune'},
+            {name:'BBB',city :'Mumbai'},
+            {name:'CCC',city :'Pune'},
+        ];
+ 
+        console.log(rollNoArray);
+
+        console.log(cityArray[1])
+        debugger;
+        cityArray[1] = "Thane";
+
+        console.log(studentArray[1].name)
+        cityArray.push("Nagpur")
+        cityArray.unshift("Panji")
+        console.log(cityArray)
+        cityArray.pop()
+        cityArray.pop()
+        cityArray.shift()
+        console.log(cityArray)
+
+    </script>
+    
+</body>
+</html>

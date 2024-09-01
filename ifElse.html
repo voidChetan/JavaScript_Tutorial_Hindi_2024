@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function checkNum() {
+            const num =  document.getElementById('txtNum').value;
+            if(num % 2 == 0) {
+                //alert("No Is ")
+                document.getElementById('numText').innerText = "Even"
+            } else {
+                //alert("No Is Odd")
+                 document.getElementById('numText').innerText = "Odd"
+            }
+        }
+
+        function checkLogic() {
+            const city1 =  document.getElementById('txtCity1').value;
+            const city2 =  document.getElementById('txtCity2').value;
+            const isActive  =  document.getElementById('chkActiove').checked;
+            if(city1 == city2 && isActive == true) {
+                    alert("City Name & checkbox is active") 
+            }   
+            debugger;
+        }
+        function checkFullName() {
+            const name = document.getElementById("txtName").value;
+            if(name == 'Mon') {
+                document.getElementById('fullName').innerText = "Monday"
+            } else if (name == 'Tue') {
+                 document.getElementById('fullName').innerText = "Tuesday"
+            } else if (name == 'Wed') {
+                 document.getElementById('fullName').innerText = "Wednesday"
+            } else if (name == 'Thu') {
+                 document.getElementById('fullName').innerText = "Thursday"
+            } else if (name == 'Sat') {
+                 document.getElementById('fullName').innerText = "Saturday"
+            } else if (name == 'Sun') {
+                 document.getElementById('fullName').innerText = "Sunday"
+            } else {
+                 document.getElementById('fullName').innerText = "Wrong Entry"
+            }
+        }
+        
+    </script>
+
+    <input type="text" placeholder="Ener Num" id="txtNum"/>
+    <button onclick="checkNum()">Check Num</button>
+    <br>
+    <h1>No Is : <strong id="numText"> </strong></h1>
+    <br>
+    <input type="text" placeholder="Ener City 1" id="txtCity1"/>
+    <input type="text" placeholder="Ener City 2" id="txtCity2"/>
+    <input type="checkbox" placeholder="Ener City 2" id="chkActiove"/>
+    <button onclick="checkLogic()">Check Logic</button>
+    <br>
+    <input type="text" maxlength="3" placeholder="Ener City 1" id="txtName"/>
+    <button onclick="checkFullName()">Check Full Name</button>
+    <p id="fullName"></p>
+
+</body>
+</html>
